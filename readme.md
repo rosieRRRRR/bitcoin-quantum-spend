@@ -1,7 +1,7 @@
-# OTQH-M + Two-Secret Multi-Child Reveal (TS-MRC)
+# Quantum Resistant Bitcoin Spend
+OTQH-M + Two-Secret Multi-Child Reveal (TS-MRC)
 
-# Specification Version: v1.0.0
-
+Version: v1.0.0
 Status: Draft for review
 Author: rosiea
 Contact: [PQRosie@proton.me](mailto:PQRosie@proton.me)
