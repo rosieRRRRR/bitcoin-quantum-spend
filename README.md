@@ -530,3 +530,22 @@ The following areas are active research directions and are **not** part of this 
 * integration with post-quantum signature schemes when supported by Bitcoin consensus.
 
 These directions MUST NOT be presented as guarantees under current Bitcoin consensus rules.
+
+## **Acknowledgements**
+
+This work reflects extensive discussion, review, and iteration within the Bitcoin protocol and cryptography community.
+
+The authors acknowledge **Ethan Heilman**, **Hunter Beast**, and **Isabel Foxen Duke**, whose recent clean-sheet rewrite of BIP-360 clarified scope, terminology, and design intent in response to community feedback. The decision to undertake a full rewrite, rather than incremental revision, materially improved internal coherence and accurately framed BIP-360 as a conservative, consensus-compatible mitigation against potential future cryptanalytic risk.
+
+BIP-360’s design is informed by foundational Bitcoin protocol research and engineering, including:
+
+- **Satoshi Nakamoto**, for the original design of Bitcoin and its trust-minimised consensus model.
+- **Pieter Wuille**, for Taproot, Tapscript, and the underlying script-path architecture that enables key-path removal.
+- **Greg Maxwell**, for adversarial analysis, cryptographic conservatism, and long-range threat modelling.
+- **Andrew Poelstra**, for formal reasoning about Bitcoin script, spend policies, and composability.
+- **Jonas Nick**, **Tim Ruffing**, and contributors to Schnorr signatures and Taproot activation.
+
+The authors also acknowledge reviewers and participants in Bitcoin protocol design discussions whose critiques and questions—particularly around naming, script extensibility, and future compatibility—helped sharpen the proposal. Notably, discussion around the **Pay-to-Tapscript-Hash (P2TSH)** naming highlights the community’s continued focus on long-term script evolution and semantic clarity.
+
+This proposal does **not** introduce post-quantum signature schemes. Instead, it represents a measured, incremental step: removing the Taproot key path to reduce exposure should elliptic-curve cryptography be weakened in the future. Any errors, omissions, or remaining ambiguities are the responsibility of the authors.
+
